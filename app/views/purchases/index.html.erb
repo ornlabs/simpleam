@@ -1,0 +1,23 @@
+<%= form_tag(method: "post") do %>
+  <%= label_tag(:ccn, "Credit Card #:") %>
+  <%= text_field_tag(:ccn) %>
+  <br/>
+
+  <%= label_tag(:expm, "Expiration month:") %>
+  <%= text_field_tag(:expm) %>
+  <br/>
+
+  <%= label_tag(:expy, "Expiration year:") %>
+  <%= text_field_tag(:expy) %>
+  <br/>
+
+  <%= label_tag(:firstn, "First Name:") %>
+  <%= text_field_tag(:firstn) %>
+  <br/>
+
+  <%= label_tag(:lastn, "Last Name:") %>
+  <%= text_field_tag(:lastn) %>
+  <br/>
+
+  <%= submit_tag("Purchase") %>
+<% end %>
